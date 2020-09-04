@@ -1,0 +1,1389 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="综合面试题（1）, 学习笔记,项目案例">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>综合面试题（1） | 白开水</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="白开水" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">白开水</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">白开水</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">综合面试题（1）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-09-03
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="一、http和https的区别："><a href="#一、http和https的区别：" class="headerlink" title="一、http和https的区别："></a><strong>一、http和https的区别：</strong></h3><p>1、HTTPS  协议需要到 CA （Certificate Authority，证书颁发机构）申请证书，一般免费证书较少，因而需要一定费用。(以前网易官网是http，而网易邮箱是 https 。)</p>
+<p>2、HTTP 是超文本传输协议，信息是明文传输，HTTPS 则是具有安全性的 ==SSL 加密传输协议==。</p>
+<p>3、HTTP 和 HTTPS 使用的是完全不同的连接方式，用的端口也不一样，前者是==80==，后者是==443==。</p>
+<p>4、HTTP 的连接很简单，是无状态的。HTTPS 协议是由 SSL+HTTP 协议构建的可进行加密传输、身份认证的网络协议，比 HTTP 协议安全。(无状态的意思是其数据包的发送、传输和接收都是相互独立的。无连接的意思是指通信双方都不长久的维持对方的任何信息。)</p>
+<h3 id="二、什么是闭包，为什么要用它？"><a href="#二、什么是闭包，为什么要用它？" class="headerlink" title="二、什么是闭包，为什么要用它？"></a>二、什么是闭包，为什么要用它？</h3><p><strong>闭包是指有权访问另一个函数作用域内变量的函数</strong>，创建闭包的最常见的方式就是在一个函数内创建另一个函数，创建的函数可以 访问到当前函数的局部变量。 </p>
+<p><strong>闭包的两个常用的用途：什么时候用闭包？</strong></p>
+<p>闭包的第一个用途是使我们在函数外部能够访问到函数内部的变量。通过使用闭包，我们可以通过在外部调用闭包函数，从而在外部访问到函数内部的变量，可以使用这种方法来创建私有变量。</p>
+<p>函数的另一个用途是使已经运行结束的函数上下文中的变量对象继续留在内存中，因为闭包函数保留了这个变量对象的引用，所以这个变量对象不会被回收。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">案例：</span><br><span class="line">function a()&#123;</span><br><span class="line">    var n &#x3D; 0;</span><br><span class="line">    function add()&#123;</span><br><span class="line">       n++;</span><br><span class="line">       console.log(n);</span><br><span class="line">    &#125;</span><br><span class="line">    return add;</span><br><span class="line">&#125;</span><br><span class="line">var a1 &#x3D; a(); &#x2F;&#x2F;注意，函数名只是一个标识（指向函数的指针），而（）才是执行函数；</span><br><span class="line">a1();    &#x2F;&#x2F;1</span><br><span class="line">a1();    &#x2F;&#x2F;2  第二次调用n变量还在内存中</span><br></pre></td></tr></table></figure>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="三、什么是-DOM-和-BOM？"><a href="#三、什么是-DOM-和-BOM？" class="headerlink" title="三、什么是 DOM 和 BOM？"></a>三、什么是 DOM 和 BOM？</h3><p><strong>DOM</strong> 指的是文档对象模型，它指的是把文档当做一个对象来对待，这个对象主要定义了处理网页内容的方法和接口。 </p>
+<p><strong>BOM</strong>  指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的法和接口。BOM 的核心是 window，而 window 对象具有双重角色，它既是通过 js 访问浏览器窗口的一个接口，又是一个 Global（全局） 对象。==DOM 的最根本的对象 document 对象也是 BOM 的 window 对 象的子对象==。 </p>
+<h3 id="四、事件委托是什么？"><a href="#四、事件委托是什么？" class="headerlink" title="四、事件委托是什么？"></a>四、事件委托是什么？</h3><p><strong>事件委托</strong> 本质上是利用了浏览器事件冒泡的机制。 使用事件代理我们可以不必要为每一个子元素都绑定一个监听事件，这样减少了内存上的消耗 。</p>
+<h3 id="五、什么是事件传播"><a href="#五、什么是事件传播" class="headerlink" title="五、什么是事件传播?"></a>五、什么是事件传播?</h3><p>当<strong>事件</strong>发生在DOM元素上时，该事件并不完全发生在那个元素上。在“当事件发生在DOM元素上时，该事件并不完全发生在那个元素上。 </p>
+<p>事件传播有三个阶段：</p>
+<p>捕获阶段–事件从 window 开始，然后向下到每个元素，直到到达目标元素事件或event.target。</p>
+<p>window—-&gt; document—-&gt; html—-&gt; body —-&gt;目标元素 </p>
+<p>目标阶段–事件已达到目标元素。</p>
+<p>冒泡阶段–事件从目标元素冒泡，然后上升到每个元素，直到到达 window。</p>
+<p>当前元素—-&gt;body —-&gt; html—-&gt;document —-&gt;window </p>
+<h3 id="六、DOM-操作——怎样添加、移除、移动、复制、创建和查找节点？"><a href="#六、DOM-操作——怎样添加、移除、移动、复制、创建和查找节点？" class="headerlink" title="六、DOM 操作——怎样添加、移除、移动、复制、创建和查找节点？"></a>六、DOM 操作——怎样添加、移除、移动、复制、创建和查找节点？</h3><p>（1）创建新节点 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">createDocumentFragment()    &#x2F;&#x2F;创建一个DOM片段 </span><br><span class="line"></span><br><span class="line">createElement()   &#x2F;&#x2F;创建一个具体的元素</span><br><span class="line"></span><br><span class="line"> createTextNode()   &#x2F;&#x2F;创建一个文本节点</span><br></pre></td></tr></table></figure>
+
+<p>（2）添加、移除、替换、插入 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">appendChild(node) 添加</span><br><span class="line"></span><br><span class="line"> removeChild(node) 移除 </span><br><span class="line"></span><br><span class="line"> replaceChild(new,old) 替换 </span><br><span class="line"></span><br><span class="line"> insertBefore(new,old) 插入 </span><br></pre></td></tr></table></figure>
+
+<p>（3）查找 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">getElementById(); </span><br><span class="line"></span><br><span class="line"> getElementsByName(); </span><br><span class="line"></span><br><span class="line"> getElementsByTagName(); </span><br><span class="line"></span><br><span class="line"> getElementsByClassName(); </span><br><span class="line"></span><br><span class="line"> querySelector(); </span><br><span class="line"></span><br><span class="line"> querySelectorAll(); </span><br></pre></td></tr></table></figure>
+
+<p>（4）属性操作 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">getAttribute(key);</span><br><span class="line"></span><br><span class="line">setAttribute(key, value);</span><br><span class="line"></span><br><span class="line">hasAttribute(key);</span><br><span class="line"></span><br><span class="line">removeAttribute(key);</span><br></pre></td></tr></table></figure>
+
+<h3 id="七、浏览器兼容性问题，解决方法"><a href="#七、浏览器兼容性问题，解决方法" class="headerlink" title="七、浏览器兼容性问题，解决方法"></a>七、浏览器兼容性问题，解决方法</h3><p>浏览器兼容问题一：不同浏览器的标签默认的margin和padding不同:<br> 解决方案：CSS里    *{margin:0;padding:0;}</p>
+<p> 浏览器兼容问题二：块属性标签float后，又有横行的margin情况下，在IE6显示margin会比设置的大；<br> 解决方案：在float的标签样式控制中加入 display:inline;将其转化为行内属性；</p>
+<p> 浏览器兼容问题三：设置较小高度标签（一般小于10px），在IE6，IE7，遨游中高度超出自己设置高度；<br> 解决方案：给超出高度的标签设置overflow:hidden;或者设置行高line-height 小于你设置的高度。</p>
+<p> 浏览器兼容问题四：行内属性标签，设置display:block后采用float布局，又有横行的margin的情况，IE6里的间距会超过设置的间距；<br> 解决方案：在display:block;后面加入display:inline;display:table;</p>
+<p> 浏览器兼容问题五：图片默认有间距，几个img标签放在一起的时候，有些浏览器会有默认的间距；<br> 解决方案：使用float属性为img布局或者设置display:block；</p>
+<p> 浏览器兼容问题六：标签最低高度设置min-height不兼容；<br> 解决方案：如果我们要设置一个标签的最小高度200px，需要进行的设置为：{min-height:200px; height:auto !important; height:200px; overflow:visible;} </p>
+<p> 浏览器兼容问题七：透明度的兼容CSS设置；<br> 解决方案：.transparent_class {<br>        filter:alpha(opacity=50);<br>       -moz-opacity:0.5;<br>        -khtml-opacity: 0.5;<br>       opacity: 0.5;<br> }<br> JS兼容问题：<br> 1、通过class获取标签： 原生js方法“document.getElementsByClassName”在ie8及其以下浏览器中，不能使用。<br> 解决方案：function getElesByClassName(className){<br>          if(document.getElementsByClassName(className)){ //如果浏览器支持                document.getElementsByClassName()方法<br>              return document.getElementsByClassName(className);<br>          }else{<br>              var all=document.getElementsByTagName(“*”);  // 获取所有元素<br>              var arr=[];<br>              for(var i=0;i&lt;all.length;i++){<br>                  if(all[i].className==className){<br>                      arr.push(all[i]);<br>                   }<br>               }<br>               return arr;<br>           }<br>      }<br> 2、事件绑定 ：addEventListener只有IE9以上版本的IE浏览器上能够兼容，IE8或者更低的版本是不支持<br> 解决方案：function addEvent(obj,event,fn){<br> //现代：addEventLister 不用加on<br> //ie：touchEvent 需要加on<br> if (window.addEventListener){<br> obj.addEventListener(event,fn);<br> }else{<br> obj.attachEvent(“on”+event, fn);<br> }<br> }<br> 3、ajax  ：不是所有浏览器都支持XMLHttpRequest对象的，在IE6及以下版本都需要创建一个ActiveXObject(“Microsoft.XMLHTTP”)<br> 解决方案：if (window.XMLHttpRequest){<br>   var ajax=new XMLHttpRequest();<br>      }else{<br> var ajax=new ActiveXObject(“Msxml2.XMLHTTP”);<br> }<br> 4、获取样式： ie不支持getComputedStyle方法，IE下获取元素的实际属性值使用currentStyle属性<br> 解决方案：function getStyle(el,styleName){<br> if (el.currentStyle){<br> return el.currentStyle[styleName];<br> }else{<br> return getComputedStyle(el, null)[styleName];<br> }<br> }</p>
+<p>不同的浏览器对CSS的解析结果是不同的，因此会导致相同的CSS输出的页面效果不同，这就需要CSS Hack来解决浏览器局部的兼容性问题。而这个针对不同的浏览器写不同的CSS 代码的过程，就叫CSS Hack。 </p>
+<p>CSS Hack常见的有三种形式：CSS属性Hack、CSS选择符Hack以及IE条件注释Hack， Hack主要针对IE浏览器。</p>
+<p>1、属性级Hack：比如IE6能识别下划线”_”和星号” * “，IE7能识别星号” * “，但不能识别下划线”_”，而firefox两个都不能认识。 </p>
+<p>2、选择符级Hack：比如IE6能识别<em>html .class{}，IE7能识别</em>+html .class{}或者*:first-child+html .class{}。</p>
+<p>3、IE条件注释Hack：IE条件注释是微软从IE5开始就提供的一种非标准逻辑语句。比如针对所有IE：&lt;!–[if IE]&gt;&lt;!–您的代码–&gt;&lt;![endif]–&gt;，针对IE6及以下版本：&lt;!–[if lt IE 7]&gt;&lt;!–您的代码–&gt;&lt;![endif]–&gt;，这类Hack不仅对CSS生效，对写在判断语句里面的所有代码都 会生效。</p>
+<p>PS：条件注释只有在IE浏览器下才能执行，这个代码在非IE浏览下被当做注释视而不见。可以通过IE条件注释载入不同的CSS、JS、HTML和服务器代码等。</p>
+<p>1.<strong>IE9一下浏览器不能使用opacity</strong> </p>
+<p>解决方法：opacity: 0.5;filter: alpha(opacity = 50);filter: progid:DXImageTransform.Microsoft.Alpha(style = 0, opacity = 50); </p>
+<p>2.<strong>cursor:hand 显示手型在safari 上不支持</strong> </p>
+<p>解决方案：统一使用 cursor:pointer </p>
+<p>3.解决 <code>IE6</code> 不支持 <code>min-height</code> 属性的问题</p>
+<p>解决方法：min-height: 350px;_height: 350px;</p>
+<p>4.让 <code>IE7 IE8</code> 支持 <code>CSS3 background-size</code>属性</p>
+<p>由于 background-size 是 CSS3 新增的属性，所以 IE 低版本自然就不支持了，但是老外写了一个 htc 文件，名叫 <a href="https://link.juejin.im/?target=%E6%A0%87%E7%AD%BE">background-size polyfill</a>，使用该文件能够让 IE7、IE8 支持 background-size 属性。其原理是创建一个 img 元素插入到容器中，并重新计算宽度、高度、left、top 等值，模拟 background-size 的效果。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">html &#123;</span><br><span class="line">  height: 100%;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">  height: 100%;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">  background-image: url(&#39;img&#x2F;37.png&#39;);</span><br><span class="line">  background-repeat: no-repeat;</span><br><span class="line">  background-size: cover;</span><br><span class="line">  -ms-behavior: url(&#39;css&#x2F;backgroundsize.min.htc&#39;);</span><br><span class="line">  behavior: url(&#39;css&#x2F;backgroundsize.min.htc&#39;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="八、数组和字符串"><a href="#八、数组和字符串" class="headerlink" title="八、数组和字符串"></a>八、数组和字符串</h3><p><img src="https://user-gold-cdn.xitu.io/2020/7/2/1730ee989aa2b15f?imageslim" alt="img"></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/6/2/1727407aed442084?imageslim" alt="img"> </p>
+<h3 id="九-常用的正则表达式"><a href="#九-常用的正则表达式" class="headerlink" title="九.常用的正则表达式"></a>九.常用的正则表达式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;（1）匹配 16 进制颜色值</span><br><span class="line">var color &#x3D; &#x2F;#([0-9a-fA-F]&#123;6&#125;|[0-9a-fA-F]&#123;3&#125;)&#x2F;g;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（2）匹配日期，如 yyyy-mm-dd 格式</span><br><span class="line">var date &#x3D; &#x2F;^[0-9]&#123;4&#125;-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（3）匹配 qq 号</span><br><span class="line">var qq &#x3D; &#x2F;^[1-9][0-9]&#123;4,10&#125;$&#x2F;g;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（4）手机号码正则</span><br><span class="line">var phone &#x3D; &#x2F;^1[34578]\d&#123;9&#125;$&#x2F;g;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（5）用户名正则</span><br><span class="line">var username &#x3D; &#x2F;^[a-zA-Z\$][a-zA-Z0-9_\$]&#123;4,16&#125;$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（6）Email正则</span><br><span class="line">var email &#x3D; &#x2F;^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]&#123;2,4&#125;)$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（7）身份证号（18位）正则</span><br><span class="line">var cP &#x3D; &#x2F;^[1-9]\d&#123;5&#125;(18|19|([23]\d))\d&#123;2&#125;((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;3&#125;[0-9Xx]$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;（8）URL正则</span><br><span class="line">var urlP&#x3D; &#x2F;^((https?|ftp|file):\&#x2F;\&#x2F;)?([\da-z\.-]+)\.([a-z\.]&#123;2,6&#125;)([\&#x2F;\w \.-]*)*\&#x2F;?$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; (9)ipv4地址正则</span><br><span class="line">var ipP &#x3D; &#x2F;^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.)&#123;3&#125;(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; (10)&#x2F;&#x2F;车牌号正则</span><br><span class="line">var cPattern &#x3D; &#x2F;^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]&#123;1&#125;[A-Z]&#123;1&#125;[A-Z0-9]&#123;4&#125;[A-Z0-9挂学警港澳]&#123;1&#125;$&#x2F;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; (11)强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：var pwd &#x3D; &#x2F;^(?&#x3D;.\d)(?&#x3D;.[a-z])(?&#x3D;.[A-Z]).&#123;8,10&#125;$&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h3 id="十、优化手段"><a href="#十、优化手段" class="headerlink" title="十、优化手段"></a>十、优化手段</h3><p><img src="C:\Users\32610\Desktop\优化.png"></p>
+<p>1.==三个方面就前端性能进行总结：网络方面、DOM操作及渲染方面、数据方面==。 </p>
+<p><strong>网络方面：</strong></p>
+<p>1.减少http请求：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">合并js文件</span><br><span class="line"></span><br><span class="line">合并css文件</span><br><span class="line"></span><br><span class="line">雪碧图的使用(css sprite)</span><br><span class="line"></span><br><span class="line">使用base64表示简单的图片</span><br></pre></td></tr></table></figure>
+
+<p>2.<strong>减小资源体积</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gzip压缩</span><br><span class="line"></span><br><span class="line">js混淆</span><br><span class="line"></span><br><span class="line">css压缩</span><br><span class="line"></span><br><span class="line">图片压缩</span><br></pre></td></tr></table></figure>
+
+<p>3.<strong>缓存</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DNS缓存</span><br><span class="line"></span><br><span class="line">CDN部署与缓存</span><br><span class="line"></span><br><span class="line">http缓存</span><br></pre></td></tr></table></figure>
+
+<p>4.<strong>移动端优化</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">使用长cache，减少重定向</span><br><span class="line"></span><br><span class="line">首屏优化，保证首屏加载数据小于14kb</span><br><span class="line"></span><br><span class="line">不滥用web字体</span><br><span class="line"></span><br><span class="line">长列表滚动优化</span><br><span class="line"></span><br><span class="line">函数防抖和函数节流</span><br><span class="line"></span><br><span class="line">使用touchstart、touchend代替click</span><br><span class="line"></span><br><span class="line">HTML的viewport设置</span><br><span class="line"></span><br><span class="line">开启GPU渲染加速</span><br></pre></td></tr></table></figure>
+
+<h3 id="十一（1）cookie、session、token"><a href="#十一（1）cookie、session、token" class="headerlink" title="十一（1）cookie、session、token"></a>十一（1）cookie、session、token</h3><p>（1）==cookie==由==服务器生成，发送给浏览器==,浏览器把cookiel以kv形 式保存到某个目录下的文本文件内，下一 -次请求同一网站时会把该cookie发送给服务器。由于cookie是存在客户端 上的，所以浏览器加入了- -些限制确保cookie不会被恶意使用，同时不会占据太多磁盘空间，所以每个域的cookie数量是有限的。</p>
+<p><strong>cookie的缺点</strong></p>
+<p>​    （1）==Cookie`数量和长度的限制== ，每个 Web 站点能设置的 Cookie 总数不能超过 20个。每个cookie长度不能超过4KB 。</p>
+<p>​     （2）==用户配置为禁用==。有些用户禁用了浏览器或客户端设备接收 Cookie 的能力，因此限制了这一功能。</p>
+<p>​    （3）由于在HTTP请求中的cookie是==明文传递的，潜在的安全风险，==Cookie 可能会被篡改</p>
+<p>​    （4）==有些状态不可能保存在客户端==</p>
+<p>​    （5）cookie会被附加在每个HTTP请求中，所以无形中==增加了流量==</p>
+<p>​    （6）==cookie一般不可跨域使用==</p>
+<p>​    （7）没有封装好的setCookie和getCookie方法，需要开发者自省封装</p>
+<p>（2）==session==是为区分用户id,服务器要知道当前发请求给自己的是谁。为了做这种区分，服务器就要给每个客户端分配不同的“身份标识”，然后客户端每次向服务器发请求的时候，都带上这个”身份标识”，服务器就知道这个请求来自于谁了。至于客户端怎么保存这个”身份标识”，可以有很多种方式，对于浏览器客户端，大家都默认采用cookie的方式。</p>
+<p>==服务器使用session把用户的信息临时保存在了服务器上，用户离开网站后session会被销毁==。这种用户信息存储方式相对cookie来说更安全，可是session有一 个缺陷: 如果web服务器做了负载均衡，那么下一-个操作请求到了另-台服务器的时候session会丢失。</p>
+<p>（3）基于==Token==的身份验证的过程如下:<br>1.用户通过用户名和密码发送请求。<br>2.程序验证。<br>3.程序返回一个签名的token 给客户端。<br>4.客户端储存token,并且每次用于每次发送请求。<br>5.服务端验证token并返回数据。</p>
+<p>以以几点==特性==会让你在程序中使用基于Token的身份验证<br>1.无状态、可扩展<br>2.支持移动设备<br>3.跨程序调用</p>
+<p>4.安全</p>
+<h3 id="十一（2）sessionStorage、localStorage和cookie的区别"><a href="#十一（2）sessionStorage、localStorage和cookie的区别" class="headerlink" title="十一（2）sessionStorage、localStorage和cookie的区别"></a>十一（2）<strong>sessionStorage、localStorage和cookie的区别</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">简洁答案：</span><br><span class="line"></span><br><span class="line">相同点：都存储在客户端</span><br><span class="line"></span><br><span class="line">不同点：1.存储大小</span><br><span class="line"></span><br><span class="line">· cookie数据大小不能超过4k。</span><br><span class="line"></span><br><span class="line">· sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</span><br><span class="line"></span><br><span class="line">2.有效时间</span><br><span class="line"></span><br><span class="line">· localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；</span><br><span class="line"></span><br><span class="line">· sessionStorage  数据在当前浏览器窗口关闭后自动删除。</span><br><span class="line"></span><br><span class="line">· cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭</span><br><span class="line"></span><br><span class="line">1. 数据与服务器之间的交互方式</span><br><span class="line"></span><br><span class="line">· cookie的数据会自动的传递到服务器，服务器端也可以写cookie到客户端</span><br><span class="line"></span><br><span class="line">· sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>1）相同点是都是==保存在浏览器端、且同源的== </p>
+<p>2）cookie数据始终在同源的http请求中携带（即使不需要），即==cookie在浏览器和服务器间来回传递==，而==sessionStorage和localStorage==不会自动把数据发送给服务器，==仅在本地保存==。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下 </p>
+<p>3）存储大小限制也不同，==cookie==数据不能超过==4K==，同时因为每次http请求都会携带cookie、所以cookie只适合保存很小的数据，如会话标识。==sessionStorage和localStorage==虽然也有存储大小的限制，但比cookie大得多，可以达到==5M==或更大 </p>
+<p>4）数据有效期不同，==sessionStorage==：仅在当前浏览器窗口==关闭之前有效==；==localStorage==：==始终有效==，窗口或浏览器关闭也一直保存，因此用作持久数据；==cookie==：==只在设置的cookie过期时间之前有效==，即使窗口关闭或浏览器关闭</p>
+<p> 5）作用域不同，==sessionStorage不在不同的浏览器窗口中共享==，即使是同一个页面；==localstorage==在所有同源窗口中都是共享的；==cookie==也是在所有同源窗口中都是共享的</p>
+<p> 6）web Storage支持事件通知机制，可以将数据更新的通知发送给监听者 7）web Storage的api接口使用更方便 </p>
+<h3 id="十二、xss域CSRF的区别"><a href="#十二、xss域CSRF的区别" class="headerlink" title="十二、xss域CSRF的区别"></a>十二、xss域CSRF的区别</h3><p>1.XSS 是代码注入问题，CSRF 是 HTTP 问题 </p>
+<p>2.XSS 是内容没有过滤导致浏览器将攻击者的输入当代码执行。CSRF 则是因为浏览器在发送 HTTP 请求时候自动带上 cookie，而一般网站的 session 都存在 cookie里面。 </p>
+<p>3.xss: 跨站脚本攻击 ，攻击者通过注入非法的 html 标签或者 javascript 代码，从而当用户浏览该网页时，控制用户浏览器 </p>
+<p>4.跨站点请求伪造 ,充用户发起请求（在用户不知情的情况下） </p>
+<h3 id="十三、XML和JSON的区别"><a href="#十三、XML和JSON的区别" class="headerlink" title="十三、XML和JSON的区别"></a>十三、XML和JSON的区别</h3><p>1.XML：扩展标记语言 </p>
+<p>2.JSON一种轻量级的数据交换格式 </p>
+<p>它们都是一种数据交换格式。</p>
+<p>1，xml是重量级的，json是轻量级的。</p>
+<p>2，xml在传输过程中比较占带宽，json占带宽少，易于压缩。</p>
+<p>3，xml和json都用在项目交互下，xml多用于做配置文件，json用于数据交互。</p>
+<p>4，json可用jackson，gson等方法解析，xml可用dom，sax，demo4j等方式解析。</p>
+<h3 id="十四、src和href的区别"><a href="#十四、src和href的区别" class="headerlink" title="十四、src和href的区别"></a>十四、src和href的区别</h3><p>1.href是超文本引用。用来建立当前元素和文档之间的链接。常用的有：link、a。 </p>
+<p>2.浏览器会识别href引用的文档并行下载该文档，并且不会停止对当前文档的处理 。</p>
+<p>3.src是引入，src的内容是页面必不可少的一部分。src指向的内容会嵌入到文档中当前标签所在的位置。常用的有：img、script、iframe。 “</p>
+<p>4.当浏览器解析到src引用时，会暂停浏览器的渲染，直到该资源加载完毕。这也是将js 脚本放在底部而不是头部的原因 </p>
+<h3 id="十五、用纯CSS创建一个三角形"><a href="#十五、用纯CSS创建一个三角形" class="headerlink" title="十五、用纯CSS创建一个三角形"></a>十五、用纯CSS创建一个三角形</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line"></span><br><span class="line">         width: 0;</span><br><span class="line">         height: 0;</span><br><span class="line">         border-top: 10px solid transparent;</span><br><span class="line">         border-bottom: 10px solid #000;</span><br><span class="line">         border-left: 10px solid transparent;</span><br><span class="line">         border-right: 10px solid transparent;</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="十六、-this-和-this-关键字有何不同？"><a href="#十六、-this-和-this-关键字有何不同？" class="headerlink" title="十六、$(this) 和 this 关键字有何不同？"></a>十六、$(this) 和 this 关键字有何不同？</h3><p>$(this) 返回一个 jQuery 对象，你可以对它调用多个 jQuery 方法，比如用 text() 获取文本，用val() 获取值等等。</p>
+<p>而 this 代表当前元素，它是 JavaScript 关键词中的一个，表示上下文中的当前 DOM 元素。你不能对它调用 jQuery 方法，直到它被 $() 函数包裹，例如 $(this)。</p>
+<h3 id="十七、盒子上下左右居中，几种方法"><a href="#十七、盒子上下左右居中，几种方法" class="headerlink" title="十七、盒子上下左右居中，几种方法"></a>十七、盒子上下左右居中，几种方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 方法一：已知元素的高宽</span><br><span class="line"></span><br><span class="line">\#div1&#123;</span><br><span class="line">    background-color:#6699FF;</span><br><span class="line">    width:200px</span><br><span class="line">    height:200px;</span><br><span class="line">    position: absolute; &#x2F;&#x2F;父元素需要相对定位</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    margin-top:-100px ; &#x2F;&#x2F;二分之一的 height，width</span><br><span class="line">    margin-left: -100px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;方法二:未知父元素高宽</span><br><span class="line"></span><br><span class="line">\#div1&#123;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background-color: #6699FF;</span><br><span class="line">    margin:auto;</span><br><span class="line">    position: absolute; &#x2F;&#x2F;父元素需要相对定位</span><br><span class="line">    left: 0;</span><br><span class="line">    top: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    bottom: 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">flex使盒子居中</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 父盒子</span><br><span class="line"></span><br><span class="line">    .da&#123;</span><br><span class="line">       width: 500px;</span><br><span class="line">       height: 500px;</span><br><span class="line">       background: green;</span><br><span class="line">       display: flex; &#x2F;&#x2F; 使用flex</span><br><span class="line">       align-items: center; &#x2F;&#x2F; 上下居中</span><br><span class="line">       justify-content: center; &#x2F;&#x2F; 左右居中</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">css3中的新属性transform实现盒子居中</span><br><span class="line"></span><br><span class="line">    .da&#123;</span><br><span class="line">        &#x2F;*父盒子*&#x2F;</span><br><span class="line">        width: 500px;</span><br><span class="line">        height: 500px;</span><br><span class="line">        background: green;</span><br><span class="line">        position: relative;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">      #er&#123;</span><br><span class="line">        &#x2F;*我是子盒子我要居中*&#x2F;</span><br><span class="line">        width: 200px;</span><br><span class="line">        height: 200px;</span><br><span class="line">        background: red;</span><br><span class="line">        position: absolute;</span><br><span class="line">        top: 50%;</span><br><span class="line">        left: 50%;</span><br><span class="line">        transform: translate(-50%,-50%);</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">利用css3的新增属性table-cell, vertical-align:middle;</span><br><span class="line"></span><br><span class="line">    .da&#123;</span><br><span class="line">        &#x2F;*父盒子*&#x2F;</span><br><span class="line">        width: 500px;</span><br><span class="line">        height: 500px;</span><br><span class="line">        background: green;</span><br><span class="line">        display: table-cell;</span><br><span class="line">        vertical-align: middle; </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">      #er&#123;</span><br><span class="line">        &#x2F;*我是子盒子我要居中*&#x2F;</span><br><span class="line">        width: 200px;</span><br><span class="line">        height: 200px;</span><br><span class="line">        background: red;</span><br><span class="line">        margin: auto;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="十八、深浅拷贝问题"><a href="#十八、深浅拷贝问题" class="headerlink" title="十八、深浅拷贝问题"></a>十八、深浅拷贝问题</h3><p>1.值类型和引用类型</p>
+<p>值类型（基本类型）：存在栈中</p>
+<p>引用类型:存在堆中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 基本类型 </span><br><span class="line"></span><br><span class="line">var a &#x3D; 1;</span><br><span class="line"></span><br><span class="line">var b &#x3D; a; </span><br><span class="line"></span><br><span class="line">a &#x3D; 2; </span><br><span class="line"></span><br><span class="line">console.log(a, b);         &#x2F;&#x2F; 2, 1 ,a b指向</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 引用类型指向同一份数据 </span><br><span class="line"></span><br><span class="line">var a &#x3D; &#123;c: 1&#125;; </span><br><span class="line"></span><br><span class="line">var b &#x3D; a; </span><br><span class="line"></span><br><span class="line">a.c &#x3D; 2; </span><br><span class="line"></span><br><span class="line">console.log(a.c, b.c); &#x2F;&#x2F; 2, 2 全是2,a b指向同一份数据</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="十九、延迟加载的问题"><a href="#十九、延迟加载的问题" class="headerlink" title="十九、延迟加载的问题"></a>十九、延迟加载的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">defer属性</span><br><span class="line">async 属性</span><br><span class="line">动态创建DOM方式</span><br><span class="line">使用jq的getScript方法</span><br><span class="line">使用setTimeout延时方法</span><br><span class="line">让js最后加载</span><br></pre></td></tr></table></figure>
+
+<h3 id="二十、从输入URL到页面加载发生了什么？"><a href="#二十、从输入URL到页面加载发生了什么？" class="headerlink" title="二十、从输入URL到页面加载发生了什么？"></a>二十、从输入URL到页面加载发生了什么？</h3><p>1、DNS解析</p>
+<p>2、TCP连接</p>
+<p>3、发送HTTP请求</p>
+<p>4、服务器处理请求并返回HTTP报文</p>
+<p>5、浏览器解析渲染页面</p>
+<p>6、连接结束</p>
+<h3 id="二十一、行内元素有哪些？块级元素有哪些？空（void）元素有哪些？"><a href="#二十一、行内元素有哪些？块级元素有哪些？空（void）元素有哪些？" class="headerlink" title="二十一、行内元素有哪些？块级元素有哪些？空（void）元素有哪些？"></a>二十一、行内元素有哪些？块级元素有哪些？空（void）元素有哪些？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">行内元素有：a b span img input select strong</span><br><span class="line"></span><br><span class="line">块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</span><br><span class="line"></span><br><span class="line">空元素：&lt;br&gt;&lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二十二、防抖和节流问题"><a href="#二十二、防抖和节流问题" class="headerlink" title="二十二、防抖和节流问题"></a>二十二、防抖和节流问题</h3><p>问题：一个事件被频繁的调用，会加重浏览器的负担，造成浏览器卡顿；</p>
+<p>解决问题:可以使用==防抖和节流来解决==</p>
+<p>==什么是防抖==：</p>
+<p>（1）如果在200ms内没有再次触发滚动事件，那么就执行函数<br>（2）如果在200ms内再次触发滚动事件，那么当前的计时取消，重新开始计时</p>
+<p><strong>效果</strong>：==如果短时间内大量触发同一事件，只会执行-一次函数。==</p>
+<p><strong>实现：</strong>使用==setTimeOut定时器==</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function debounce(fn, delay)&#123;</span><br><span class="line">    let timer &#x3D; null &#x2F;&#x2F;借助闭包</span><br><span class="line">    return function() &#123;</span><br><span class="line">        if(timer)&#123;</span><br><span class="line">            clearTimeout(timer)</span><br><span class="line">        &#125;</span><br><span class="line">    timer &#x3D; setTimeout(fn,delay) &#x2F;&#x2F;简化写法</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;滚动事件</span><br><span class="line">function showTop() &#123;</span><br><span class="line">    var scrollTop &#x3D; document. body . scrollTop|| document.documentElement . scrollTop;</span><br><span class="line">    console.1og( &#39;滚动条位置: &#39; + scrollTop);</span><br><span class="line">&#125;</span><br><span class="line">window.onscroll &#x3D; debounce(showTop ,1000)</span><br></pre></td></tr></table></figure>
+
+<p>==什么是节流：==</p>
+<p>类似控制阀门一样定期开放的函数,也就是让函数执行一次后,在某个时间段内暂时失效，过了这段时间后重新激活(类似于技能冷却时间)。</p>
+<p>**效果:**如果短时间内大量触发同一事件，那么在函数执行一次之后，该函数在指定的时间期限内不再工作，直至过了这段时间才重新生效。</p>
+<p><strong>实现：</strong>使用==setTimeOut定时器==</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function throttle(fn, delay)&#123;</span><br><span class="line">    let valid &#x3D; true</span><br><span class="line">    return function() &#123;</span><br><span class="line">        if(!valid)&#123;</span><br><span class="line">            &#x2F;&#x2F;休息时间暂不接客</span><br><span class="line">        return false </span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F;工作时间，执行函数并且在间隔朗内把状态位没为无效</span><br><span class="line"></span><br><span class="line">        valid &#x3D; false</span><br><span class="line">        setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">            fn()</span><br><span class="line">            valid &#x3D; true;</span><br><span class="line">        &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;滚动事件</span><br><span class="line">function showTop() &#123;</span><br><span class="line">    var scrollTop &#x3D; document. body . scrollTop|| document.documentElement . scrollTop;</span><br><span class="line">    console.1og( &#39;滚动条位置: &#39; + scrollTop);</span><br><span class="line">&#125;</span><br><span class="line">window.onscroll &#x3D; debounce(showTop ,1000)</span><br></pre></td></tr></table></figure>
+
+<p><strong>应用场景：</strong></p>
+<p>1.搜索框input事件,例如要支持输入实时搜索可以使用节流方案(间隔一段时间就必须查询相关内容)，或者实现输入间隔大于某个值(如500ms) ，就当做用户输入完成,然后开始搜索,具体使用哪种方案要看业务需求。<br>2.页面resize事件,常见于需要做页面适配的时候。需要根据最终呈现的页面情况进行dom渲染(这种情形一般是使用防抖, 因为只需要判断最后- -次的变化情况)</p>
+<h3 id="二十三、（flex）弹性盒子的主轴和侧轴"><a href="#二十三、（flex）弹性盒子的主轴和侧轴" class="headerlink" title="二十三、（flex）弹性盒子的主轴和侧轴"></a>二十三、（flex）弹性盒子的主轴和侧轴</h3><p>弹性盒子分为==主轴==和==侧轴==（又称交叉轴）</p>
+<p>属性：flex-direction </p>
+<p>主轴设置：flex-direction ：row 或row-reverse </p>
+<p>==主轴通俗来讲就是，X轴==</p>
+<p>侧轴设置：flex-direction ：column  或column-reverse </p>
+<p>==侧轴通俗来讲就是，y轴==</p>
+<h3 id="二十四、同步异步的理解"><a href="#二十四、同步异步的理解" class="headerlink" title="二十四、同步异步的理解"></a>二十四、同步异步的理解</h3><p>==同步==：阻塞模式；==异步==：非阻塞模式</p>
+<p>==同步==就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，知道收到返回信息才继续执行下去； </p>
+<p>==异步==是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回式系统会通知进程进行处理，这样可以提高执行的效率。 </p>
+<h3 id="二十五、Jq遍历方法有哪些"><a href="#二十五、Jq遍历方法有哪些" class="headerlink" title="二十五、Jq遍历方法有哪些"></a>二十五、Jq遍历方法有哪些</h3><h3 id="二十六、px、rem和em的区别"><a href="#二十六、px、rem和em的区别" class="headerlink" title="二十六、px、rem和em的区别"></a>二十六、px、rem和em的区别</h3><p>==px:== 绝对单位，页面按照精确像素展示</p>
+<p>==em：==相对bai单位，基准点为==父节点==字体的大小，如果zhi自身定义了font-size按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。</p>
+<p>==rem：==相对单位，可理解为”root em”, 相对==根节点==html的字体大小来计算，CSS3新加属性，chrome/firefox/IE9+支持。</p>
+<h3 id="二十六、call、apply和bind的区别"><a href="#二十六、call、apply和bind的区别" class="headerlink" title="二十六、call、apply和bind的区别"></a>二十六、call、apply和bind的区别</h3><p>==共同点：==call()、apply()和bind()都是改变函数内部的==this指向==，第一个参数也都放的是要改变this对象</p>
+<p>==不同点：==</p>
+<p>（1）主要在第二个参数上，==call()==从第二个开始放的是==正常的参数==，而==apply()==放的是==数组== ，==bind()==返回的是==函数==</p>
+<p>（2）call()、apply()当第一个参数为 null、undefined的时候，默认指向window。 </p>
+<p>（3）bind()不会立即执行，call()、apply()直接调用</p>
+<p>案例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;有只猫叫小黑，小黑会吃鱼</span><br><span class="line">const cat &#x3D; &#123;</span><br><span class="line">    name :&#39;小黑&#39;，</span><br><span class="line">    eatFish(...args) &#123;</span><br><span class="line">        console. log(&#39;this指向&#x3D;&gt;&#39;，this);</span><br><span class="line">        console.1og(&#39;...args”，args);</span><br><span class="line">        console. log(this.name + &#39;吃鱼&#39;);</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;有只狗叫大毛，大毛会吃骨头</span><br><span class="line">const dog&#x3D;&#123;</span><br><span class="line">    name: &#39;大毛&#39;，</span><br><span class="line">    eatBone(...args) &#123;</span><br><span class="line">        console. log(&#39;this指向&#x3D;&gt;&#39;，this);</span><br><span class="line">        console.1og(&#39;...args”, args);</span><br><span class="line">        console. log(this.name + &#39;吃骨头&#39;);</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br><span class="line">console.1og(&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; call &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#39;);</span><br><span class="line">    &#x2F;&#x2F;有一天大毛想吃鱼了，可是它不知道怎么吃。怎么办?小黑说我吃的时候喂你吃</span><br><span class="line">    cat.eatFish.call(dog, &#39;汪汪汪’， &#39;call&#39;)</span><br><span class="line">    &#x2F;&#x2F;大毛为了表示感谢，决定下次吃骨头的时候也喂小黑吃</span><br><span class="line">    dog.eatBone.call(cat,&#39;喵喵喵 &#39;，&#39;call&#39;)</span><br><span class="line">console.1og(&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; apply &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#39;);</span><br><span class="line">    cat.eatFish.apply(dog, [汪汪汪&#39;，&#39; apply&#39;])</span><br><span class="line">    dog.eatBone.apply(cat, [&#39;喵喵喵&#39;，&#39; apply&#39;])</span><br><span class="line">console.1og(&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; bind &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#39;);</span><br><span class="line">&#x2F;&#x2F;有一天他们觉得每次吃的时候再暧太麻烦了。于脆直接教对方怎么吃</span><br><span class="line">    const test1 &#x3D; cat.eatFish.bind(dog,汪汪汪’， &#39; bind&#39;)</span><br><span class="line">    const test2 &#x3D; dog. eatBone.bind(cat, &#39;喵喵喵’， &#39; bind&#39;)</span><br><span class="line">    test1()</span><br><span class="line">    test2()</span><br></pre></td></tr></table></figure>
+
+<p><strong>应用场景：</strong></p>
+<p>1.求数组中的最大和最小值 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [1, 2, 3, 89, 46]; </span><br><span class="line">var max &#x3D; Math.max.apply(null, arr);  &#x2F;&#x2F; 89</span><br><span class="line">var min &#x3D; Math.min.apply(null, arr); &#x2F;&#x2F; 1 </span><br></pre></td></tr></table></figure>
+
+<p>2.将类数组转为数组 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var trueArr &#x3D; Array.prototype.slice.call( arrayLike ); </span><br></pre></td></tr></table></figure>
+
+<p>3.数组追加 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr1 &#x3D; [1, 2, 3]; </span><br><span class="line">var arr2 &#x3D; [4, 5, 6]; </span><br><span class="line">var total &#x3D; [].push.apply(arr1, arr2);  &#x2F;&#x2F; 6 </span><br><span class="line">arr1 &#x3D; [1, 2, 3, 4, 5, 6]</span><br><span class="line">arr2 &#x3D; [4, 5, 6]</span><br></pre></td></tr></table></figure>
+
+<p>4.判断变量类型 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function isArray(obj)&#123;     </span><br><span class="line">    return Object.prototype.toString.call(obj) &#x3D;&#x3D; &#39;[Object Array]&#39;; </span><br><span class="line">&#125; </span><br><span class="line">&#x2F;&#x2F; isArray([])  &#x3D;&gt; true </span><br><span class="line">&#x2F;&#x2F; isArray(&#39;yw&#39;) &#x3D;&gt; false </span><br></pre></td></tr></table></figure>
+
+<p>5.利用call和apply做继承 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">fucntion Person(name, age)&#123;     </span><br><span class="line">&#x2F;&#x2F; 这里的this都指向实例    </span><br><span class="line">this.name &#x3D; name;     </span><br><span class="line">this.age &#x3D; age;     </span><br><span class="line">this.sayAge &#x3D; function()&#123;        </span><br><span class="line">     console.log(this.age)     </span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br><span class="line">function Female()&#123;     </span><br><span class="line">    Person.apply(this, arguments); &#x2F;&#x2F; 将父元素所有方法在这里执行一遍就继承了 </span><br><span class="line">&#125; </span><br><span class="line">var female &#x3D; new Female(&#39;yw&#39;, 27); </span><br></pre></td></tr></table></figure>
+
+<p><strong>总结：</strong></p>
+<p>1.当我们使用-个函数需要改变this指向的时候才会用到call apply bind<br>2.如果你要传递的参数不多,则可以使用fn.call(thisobj, arg1, arg2 …）<br>3.如果你要传递的参数很多，则可以用数组将参数整理好调用fn. apply(this0bj, [arg1, arg2 …)<br>4.如果你想生成一个新的函数长期绑定某 个函数给某个对象使用，则可以使用const newFn =<br>fn. bind(this0bj); newFn(arg1, arg2…)</p>
+<h3 id="二十七、原型链和原型"><a href="#二十七、原型链和原型" class="headerlink" title="二十七、原型链和原型"></a>二十七、原型链和原型</h3><p><strong>1.原型链的概念</strong>：</p>
+<p><strong>2.原型的概念：</strong>原型是一个对象</p>
+<h3 id="二十八、面向对象和面向过程的区别"><a href="#二十八、面向对象和面向过程的区别" class="headerlink" title="二十八、面向对象和面向过程的区别"></a>二十八、面向对象和面向过程的区别</h3><p><strong>面向过程：</strong>是按一定的顺序来执行</p>
+<p><strong>面向对象：</strong>思维方式 找到角色，确定职责</p>
+<h3 id="二十九、this-的指向"><a href="#二十九、this-的指向" class="headerlink" title="二十九、this.的指向"></a>二十九、this.的指向</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">ele.onclick &#x3D; function()&#123;</span><br><span class="line">    console.log(this)  &#x2F;&#x2F;this指向ele</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Person(name)&#123;</span><br><span class="line">    this.name &#x3D; name;</span><br><span class="line">    this指向【当前对象】，所谓的当前对象，是指，此刻正在执行这个函数的对象，谁调用这个函数，this就指向谁</span><br><span class="line">&#125;</span><br><span class="line">let p &#x3D; Person();</span><br><span class="line"></span><br><span class="line">let obj &#x3D;&#123;</span><br><span class="line">    print : Person</span><br><span class="line">&#125;</span><br><span class="line">obj.print &#x3D;&#x3D; person;</span><br><span class="line">window.Person();&#x2F;&#x2F;此时this指向widow</span><br><span class="line">obj.print();&#x2F;&#x2F;此时this指向obj</span><br><span class="line"></span><br><span class="line">setInterval(Person,200); &#x2F;&#x2F;此时this指向widow</span><br><span class="line"></span><br><span class="line">对象.方法();</span><br><span class="line"></span><br><span class="line">Person.call(document)； 等价于document.Person()</span><br><span class="line">方法.call(对象)</span><br><span class="line"></span><br><span class="line">call&#x2F;apply </span><br><span class="line">函数.call(指定任何对象)；&#x2F;&#x2F;可以直接执行函数</span><br><span class="line">let 新函数 &#x3D; 函数.bind(obj);</span><br><span class="line">新函数的this,会永久的指向obj,因此我们说，this被绑定了</span><br><span class="line"></span><br><span class="line">手动实现一个bind方法</span><br><span class="line">Function.prototype.bind &#x3D; function(target)&#123;</span><br><span class="line">    var fn &#x3D; this;</span><br><span class="line">    return function ()&#123;</span><br><span class="line">        fn.apply(target,arguments);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var newalert &#x3D; alert.bind(xxx);</span><br></pre></td></tr></table></figure>
+
+<h3 id="三十、箭头函数的this"><a href="#三十、箭头函数的this" class="headerlink" title="三十、箭头函数的this"></a>三十、箭头函数的this</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let obj &#x3D;&#123;</span><br><span class="line">    id:99,</span><br><span class="line">    hello:()&#x3D;&gt;&#123;</span><br><span class="line">        console.log(this); &#x2F;&#x2F;指向window  诀窍：当这个箭头函数不存在</span><br><span class="line">        console.log(this.id)； &#x2F;&#x2F;undefined</span><br><span class="line">    &#125;</span><br><span class="line">    obj.hello();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="三十一、几种常见的隐藏元素的方法"><a href="#三十一、几种常见的隐藏元素的方法" class="headerlink" title="三十一、几种常见的隐藏元素的方法"></a>三十一、几种常见的隐藏元素的方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a. visibility: hidden；这个属性只是简单的隐藏某个元素，但是元素占用的空间任然存在。</span><br><span class="line"></span><br><span class="line">b. opacity: 0；一个CSS3属性，设置0可以使一个元素完全透明，制作出和visibility一样的效果。与visibility相比，它可以被transition和animate</span><br><span class="line"></span><br><span class="line">c. position: absolute；使元素脱离文档流，处于普通文档之上，给它设置一个很大的left负值定位，使元素定位在可见区域之外。</span><br><span class="line"></span><br><span class="line">d. display: none；元素会变得不可见，并且不会再占用文档的空间</span><br><span class="line">e. transform: scale(0)；将一个元素设置为无限小，这个元素将不可见。这个元素原来所在的位置将被保留。</span><br></pre></td></tr></table></figure>
+
+<h3 id="三十二、几种可以清除浮动的方法"><a href="#三十二、几种可以清除浮动的方法" class="headerlink" title="三十二、几种可以清除浮动的方法"></a>三十二、几种可以清除浮动的方法</h3><p>a. 添加额外标签，例如<code>&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;</code> </p>
+<p>b. 父元素设置 overflow：hidden；在IE6中还需要触发<a target="_blank" rel="noopener" href="http://yiminghe.iteye.com/blog/367384">hasLayout</a>，例如zoom：1；</p>
+<p>c. 父元素设置 overflow：auto 属性；同样IE6需要触发hasLayout </p>
+<p>d. 使用:after 伪元素；由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after&#123;</span><br><span class="line">     content: &quot;&quot;; </span><br><span class="line">     display: block; </span><br><span class="line">     height: 0; </span><br><span class="line">     clear: both; </span><br><span class="line">     visibility: hidden;  </span><br><span class="line">     zoom:1 &#x2F;&#x2F;为了兼容IE6</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="三十三、table布局的缺点"><a href="#三十三、table布局的缺点" class="headerlink" title="三十三、table布局的缺点"></a>三十三、table布局的缺点</h3><p>a. 太深的嵌套，比如table&gt;tr&gt;td&gt;h3，会导致搜索引擎读取困难，而且，最直接的损失就是大大增加了冗余代码量。</p>
+<p>b. 灵活性差，比如要将tr设置border等属性，是不行的，得通过td</p>
+<p>c. 代码臃肿，当在table中套用table的时候，阅读代码会显得异常混乱</p>
+<p>d. 混乱的colspan与rowspan，用来布局时，频繁使用他们会造成整个文档顺序混乱。</p>
+<p>e. table需要多次计算才能确定好其在渲染树中节点的属性，通常要花3倍于同等元素的时间。</p>
+<p>f. 不够语义</p>
+<h3 id="三十四、对盒模型和怪异盒模型的理解"><a href="#三十四、对盒模型和怪异盒模型的理解" class="headerlink" title="三十四、对盒模型和怪异盒模型的理解"></a>三十四、对盒模型和怪异盒模型的理解</h3><p>==盒模型==：在W3S标准中，一个盒子的高度和宽度，指的是元素的==真实宽度和高度==</p>
+<p>==怪异盒模型：==在IE下一个盒子的高度和宽度，指的是还==包括padding和border==</p>
+<p>==content-box：== padding和border==不被包含==在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和。（W3C盒子模型）</p>
+<p>==border-box：== padding和border被==包含==在定义的width和height之内。对象的实际宽度就等于设置的width值。（IE6盒子模型）</p>
+<h3 id="三十五、HTML5有哪些新特性"><a href="#三十五、HTML5有哪些新特性" class="headerlink" title="三十五、HTML5有哪些新特性"></a>三十五、HTML5有哪些新特性</h3><p>a. HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。</p>
+<p>b. 拖拽释放(Drag and drop) API</p>
+<p>c. 语义化更好的内容标签（header,nav,footer,aside,article,section）</p>
+<p>d. 音频、视频(<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio">audio</a>,<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video">video</a>)API</p>
+<p>e. 画布(<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API">Canvas</a>) API</p>
+<p>f. 地理(<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Geolocation/Using_geolocation">Geolocation</a>) API</p>
+<p>g. 本地离线存储 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage">localStorage</a> 长期存储数据，浏览器关闭后数据不丢失</p>
+<p>h. <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage">sessionStorage</a> 的数据在页面会话结束时会被清除</p>
+<p>i. 表单控件，calendar、date、time、email、url、search </p>
+<p>j. 新的技术<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API/Using_web_workers">webworker</a>, <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket">websocket</a>等</p>
+<h3 id="三十六、CSS3有哪些新特性"><a href="#三十六、CSS3有哪些新特性" class="headerlink" title="三十六、CSS3有哪些新特性"></a>三十六、CSS3有哪些新特性</h3><p>CSS3实现圆角（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-radius">border-radius</a>），阴影（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow">box-shadow</a>），对文字加特效（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-shadow">text-shadow</a>），线性渐变（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient">gradient</a>），变形（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform">transform</a>）</p>
+<p>增加了更多的CSS选择器  多背景 rgba，在CSS3中唯一引入的伪元素是::selection，媒体查询，多栏布局</p>
+<h3 id="三十七、JavaScript-的同源策略-的理解"><a href="#三十七、JavaScript-的同源策略-的理解" class="headerlink" title="三十七、JavaScript 的同源策略 的理解"></a>三十七、JavaScript 的同源策略 的理解</h3><p>同源策略指的是：==协议== ，==域名== ，==端口== 相同，同源策略是一种安全协议。</p>
+<p>指一段脚本只能读取来自同一来源的窗口和文档的属性。</p>
+<h3 id="三十八、rgba-和opacity的透明效果有什么不同？"><a href="#三十八、rgba-和opacity的透明效果有什么不同？" class="headerlink" title="三十八、rgba()和opacity的透明效果有什么不同？"></a>三十八、rgba()和opacity的透明效果有什么不同？</h3><p>a. opacity作用于元素，以及元素内的所有内容的透明度，rgba()只作用于元素的颜色或其背景色。</p>
+<p>b. 设置rgba透明的元素的子元素不会继承透明效果！</p>
+<h3 id="三十九、实现预加载一张图片，加载完成后显示在网页中并设定其高度为50px，宽度为50px"><a href="#三十九、实现预加载一张图片，加载完成后显示在网页中并设定其高度为50px，宽度为50px" class="headerlink" title="三十九、实现预加载一张图片，加载完成后显示在网页中并设定其高度为50px，宽度为50px"></a>三十九、<strong>实现预加载一张图片，加载完成后显示在网页中并设定其高度为50px，宽度为50px</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    img &#x3D; new Image();</span><br><span class="line">    img.src &#x3D; &quot;http:&#x2F;&#x2F;pic8.nipic.com&#x2F;20100701&#x2F;5290458_114840036316_2.jpg&quot;;</span><br><span class="line">    img.onload &#x3D; function () &#123;</span><br><span class="line">        img.height &#x3D; 50;</span><br><span class="line">        img.width &#x3D; 50;</span><br><span class="line">    &#125;</span><br><span class="line">    document.body.appendChild(img);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="四十、使用原生js写一个深度克隆一个对象"><a href="#四十、使用原生js写一个深度克隆一个对象" class="headerlink" title="四十、使用原生js写一个深度克隆一个对象"></a>四十、使用原生js写一个深度克隆一个对象</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    var cloneObj &#x3D; function (obj) &#123;</span><br><span class="line">        var str, newobj &#x3D; obj.constructor &#x3D;&#x3D;&#x3D; Array ? [] : &#123;&#125;;</span><br><span class="line">        if (typeof obj !&#x3D;&#x3D; &#39;object&#39;) &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125; else if (window.JSON) &#123;</span><br><span class="line">            str &#x3D; JSON.stringify(obj), &#x2F;&#x2F;系列化对象</span><br><span class="line">                newobj &#x3D; JSON.parse(str); &#x2F;&#x2F;还原</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            for (var i in obj) &#123;</span><br><span class="line">                newobj[i] &#x3D; typeof obj[i] &#x3D;&#x3D;&#x3D; &#39;object&#39; ?</span><br><span class="line">                    cloneObj(obj[i]) : obj[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return newobj;</span><br><span class="line">    &#125;;</span><br><span class="line">    &#x2F;&#x2F;测试</span><br><span class="line">    var obj &#x3D; &#123; a: 0, b: 1, c: 2 &#125;;</span><br><span class="line">    var arr &#x3D; [0, 1, 2];</span><br><span class="line">    &#x2F;&#x2F;执行深度克隆</span><br><span class="line">    var newobj &#x3D; cloneObj(obj);</span><br><span class="line">    var newarr &#x3D; cloneObj(arr);</span><br><span class="line">    &#x2F;&#x2F;对克隆后的新对象进行成员删除</span><br><span class="line">    delete newobj.a;</span><br><span class="line">    newarr.splice(0, 1);</span><br><span class="line">    console.log(obj);</span><br><span class="line">    console.log(arr);</span><br><span class="line">    console.log(newobj);</span><br><span class="line">    console.log(newarr);</span><br><span class="line"></span><br><span class="line">    var it &#x3D; 2;</span><br><span class="line">    &#x2F;&#x2F;var newit &#x3D; cloneObj(newit);</span><br><span class="line">    &#x2F;&#x2F;console.log(newit);</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="四十一、JS如何实现面向对象和继承机制？"><a href="#四十一、JS如何实现面向对象和继承机制？" class="headerlink" title="四十一、JS如何实现面向对象和继承机制？"></a>四十一、JS如何实现面向对象和继承机制？</h3><p><strong>创建对象方法：</strong></p>
+<p>a. 利用json创建对象</p>
+<p>b. 使用JavaScript中的Object类型</p>
+<p>c. 通过创建函数来生成对象</p>
+<p><strong>继承机制：</strong></p>
+<p>a. 构造函数绑定，使用call或apply方法，将父对象的构造函数绑定在子对象上</p>
+<p>b. prototype模式，继承new函数的模式</p>
+<p>c. 直接继承函数的prototype属性，对b的一种改进</p>
+<p>d. 利用空对象作为中介</p>
+<p>e. 在ECMAScript5中定义了一个新方法<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create">Object.create()</a>，用于创建一个新方法</p>
+<p>f. 拷贝继承，把父对象的所有属性和方法，拷贝进子对象，实现继承。 </p>
+<h3 id="四十二、jQuery的特点"><a href="#四十二、jQuery的特点" class="headerlink" title="四十二、jQuery的特点"></a>四十二、jQuery的特点</h3><p>a. 一款轻量级的js库</p>
+<p>b. 丰富快速的DOM选择器</p>
+<p>c. 链式表达式</p>
+<p>d. 事件、样式、动画等特效支持</p>
+<p>e. Ajax操作封装，支持跨域</p>
+<p>f. 跨浏览器兼容</p>
+<p>g. 插件扩展开发</p>
+<h3 id="四十三、Ajax有哪些好处和弊端？"><a href="#四十三、Ajax有哪些好处和弊端？" class="headerlink" title="四十三、Ajax有哪些好处和弊端？"></a>四十三、Ajax有哪些好处和弊端？</h3><p><strong>优点：</strong></p>
+<p>a. 无刷新更新数据</p>
+<p>b. 异步与服务器通信</p>
+<p>c. 前端和后端负载平衡</p>
+<p>d. 基于标准被广泛支持</p>
+<p>e. 界面与应用分离</p>
+<p><strong>缺点：</strong></p>
+<p>a. AJAX干掉了Back和History功能，即对浏览器机制的破坏</p>
+<p>b. AJAX的安全问题</p>
+<p>c. 对搜索引擎支持较弱</p>
+<p>d. 违背URL和资源定位的初衷</p>
+<h3 id="四十四、null和undefined的区别？"><a href="#四十四、null和undefined的区别？" class="headerlink" title="四十四、null和undefined的区别？"></a>四十四、null和undefined的区别？</h3><p><strong>null：</strong></p>
+<p>a. null是一个表示”无”的对象，转为数值时为0</p>
+<p>b. null表示”没有对象”，即该处不应该有值。</p>
+<p><strong>undefined：</strong></p>
+<p>a. undefined是一个表示”无”的原始值，转为数值时为NaN。</p>
+<p>b. undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。</p>
+<h3 id="四十五、new操作符具体干了什么呢"><a href="#四十五、new操作符具体干了什么呢" class="headerlink" title="四十五、new操作符具体干了什么呢?"></a>四十五、new操作符具体干了什么呢?</h3><p>a. 一个新对象被创建。它继承自函数原型</p>
+<p>b. 构造函数被执行。执行的时候，相应的传参会被传入</p>
+<p>c. 上下文(this)会被指定为这个新实例</p>
+<p>d. 如果构造函数返回了一个“对象”，那么这个对象会取代整个new出来的结果</p>
+<h3 id="四十六、JS异步编程方式有几种？"><a href="#四十六、JS异步编程方式有几种？" class="headerlink" title="四十六、JS异步编程方式有几种？"></a>四十六、JS异步编程方式有几种？</h3><p>a. 回调函数</p>
+<p>b. 事件监听</p>
+<p>c. 发布订阅</p>
+<p>d. promise </p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">白开水</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://xjslhz.github.io/2020/09031.html">http://xjslhz.github.io/2020/09031.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">白开水</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/09032.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="高阶综合面试题">
+                        
+                        <span class="card-title">高阶综合面试题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1.Promise是什么？
+Promise是一种用于解决异步问题的思路、方案或者对象方式。
+
+2.Promise怎么用？
+Promise是一个对象，所以先用new的方式创建一个，然后给它传一个函数作为参数，这个函数有两个参数，一个叫reol
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            白开水
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/080816107.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="基础篇">
+                        
+                        <span class="card-title">基础篇</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            基础篇
+1.Js有哪些数据类型Number 数字类型
+String 字符串类型
+Boolean 布尔类型
+Null 空
+Undefined 未定义
+Object 对象{function，Array,Date}
+Symbol  es6
+2.j
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            白开水
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">白开水</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:3261085433@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3261085433" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3261085433" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

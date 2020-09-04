@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 学习笔记,项目案例">
+    <meta name="keywords" content="基础篇, 学习笔记,项目案例">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 白开水</title>
+    <title>基础篇 | 白开水</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">基础篇</h1>
                 </div>
             </div>
         </div>
@@ -459,19 +459,56 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <p>基础篇</p>
+<h4 id="1-Js有哪些数据类型"><a href="#1-Js有哪些数据类型" class="headerlink" title="1.Js有哪些数据类型"></a>1.Js有哪些数据类型</h4><p>Number 数字类型</p>
+<p>String 字符串类型</p>
+<p>Boolean 布尔类型</p>
+<p>Null 空</p>
+<p>Undefined 未定义</p>
+<p>Object 对象{function，Array,Date}</p>
+<p>Symbol  es6</p>
+<h4 id="2-js验证数据类型"><a href="#2-js验证数据类型" class="headerlink" title="2.js验证数据类型"></a>2.js验证数据类型</h4><p>typeof 除了null都可以显示正确的类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof undefined);&#x2F;&#x2F;undefined</span><br><span class="line">console.log(typeof 123);&#x2F;&#x2F; number</span><br><span class="line">console.log(typeof &#39;123&#39;);&#x2F;&#x2F;string</span><br><span class="line">console.log(typeof true);  &#x2F;&#x2F; boolean</span><br><span class="line">console.log(typeof [1,2,3]);&#x2F;&#x2F;object数组的数据类型在typeof中被解释为object</span><br><span class="line">console.log(typeof &#123;&quot;id&quot;: 11&#125;); &#x2F;&#x2F;object</span><br><span class="line">lconsole.log(typeof null); &#x2F;&#x2F;object</span><br><span class="line">console.log(typeof console.log);&#x2F;&#x2F;function </span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>instanceof 可以正确的判断对象的类型，因为instanceof是通过判断对象的原型链是不是能找到类型的prototype</p>
+<p>instanceof 能准确的判断引用数据类型（Array，function，Object）,却不能判断基本数据类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">console.log(2 instanceof Number)                &#x2F;&#x2F;false</span><br><span class="line">console.log(true instanceof Boolean)         &#x2F;&#x2F;false</span><br><span class="line">console.log( &#39;str&#39; instanceof String);         &#x2F;&#x2F;false</span><br><span class="line">console.log([] instanceof Array );             &#x2F;&#x2F;true</span><br><span class="line">console.log(function()&#123;&#125; instanceof Function);  &#x2F;&#x2F;true</span><br><span class="line">console.log(&#123;&#125;instanceof Object);            &#x2F;&#x2F;true</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="3-类型转换"><a href="#3-类型转换" class="headerlink" title="3.类型转换"></a>3.类型转换</h4><p>toSring（）//转换string</p>
+<p>Number() 、parseFloat()、parseInt()//转换为number</p>
+<p>Boolean() //转换boolean类型</p>
+<h4 id="4-JSON"><a href="#4-JSON" class="headerlink" title="4.JSON"></a>4.JSON</h4><p>JSON是js的一个对象，也是一种数据格式，JSON的两个api</p>
+<p>（1）   将JSON字符串转换成JSON对象 JSON.parse（）</p>
+<p>（2）   将JSON对象转换成JSON字符串JSON.stringify()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SON字符串</span><br><span class="line">var str1 &#x3D;&#39;&#123;&quot;name&quot; : &quot;]avaScript&quot;, &quot;age&quot;: &quot;24&quot;〕&#39;</span><br><span class="line"></span><br><span class="line">SON对象</span><br><span class="line">var str2 &#x3D; &#123;name: &quot;avaScript&quot;, age: &quot;24&quot;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h4 id="5-js数组方法"><a href="#5-js数组方法" class="headerlink" title="5.js数组方法"></a>5.js数组方法</h4><p>（1）join()拼接 ，数组转化为字符串</p>
+<p>（2）split（）//字符串切割成数字</p>
+<p>（3）reverse() //数组元素颠倒顺序，翻转</p>
+<p>（4）concat() //数组拼接</p>
+<p>（5）slice()//截取数组，字符串拼接数组</p>
+<p>（6）splice()//从数组中删除</p>
+<p>（7）push()//在数组中尾部添加一个或多个元素</p>
+<p>（8）pop()//从数组尾部删除一个元素</p>
+<p>（9）unshift()//从数组开始位置添加一个元素或多个元素</p>
+<p>（10）shift()//从数组开始位置删除一个元素</p>
+<p>（11）toString（）转换为字符串</p>
+<p>（12）indexOf()查找起点位置索引</p>
+<p>（13）sort()排序</p>
+<p>（14）forEach()从头至尾遍历数组</p>
+<p>（15）map()调用数组</p>
+<p>（16）filter()过滤</p>
+<p>（17）every（）所有满足条件 返回true和some() 一项条件满足返回true</p>
+<p>（18）reduce()函数和递归的初始值</p>
+<p>（19）str.padStart(targetlenght,padsting)</p>
+<p> str.padEnd(targetlenght，padsting)</p>
+<p>targetLength</p>
+<p>　　当前字符串需要补全的目标长度。如果这个数值小于当前字符串的长度，则返回当前字符串本身。</p>
+<p>padString | 可选</p>
+<p>　　补全字符串。如果字符串太长，使补全的字符串长度超过了目标长度，则只保留最左侧的部分，其他部分会被截断。此参数的缺省值为“” （U+0020）</p>
+<p><strong>padStart()</strong> <strong>方法用另一个字符串填充当前字符串（重复，如果需要的话），以便产生的字符串达到给定的长度。填充从当前字符串的开始（左侧）应用的。padEnd() 填充从当前字符串的末尾（右侧）应用的。</strong></p>
+<p><strong>Eg:</strong> <code>&#39;wen&#39;.padStart(5, &#39;12&#39;)  //  &#39;12Wen&#39;</code></p>
+<p><code>&#39;wen&#39;.padEnd(2, &#39;ab&#39;) // &#39;wen&#39;</code></p>
 
             </div>
             <hr/>
@@ -700,30 +737,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/080816107.html">
+                <a href="/2020/09031.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="综合面试题（1）">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">综合面试题（1）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            一、http和https的区别：1、HTTPS  协议需要到 CA （Certificate Authority，证书颁发机构）申请证书，一般免费证书较少，因而需要一定费用。(以前网易官网是http，而网易邮箱是 https 。)
+2、HT
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -732,7 +769,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -747,15 +783,23 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="基础篇">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">基础篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            基础篇
+1.Js有哪些数据类型Number 数字类型
+String 字符串类型
+Boolean 布尔类型
+Null 空
+Undefined 未定义
+Object 对象{function，Array,Date}
+Symbol  es6
+2.j
                         
                     </div>
                     <div class="publish-info">

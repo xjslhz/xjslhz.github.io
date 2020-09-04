@@ -6,7 +6,7 @@
   <link href="http://xjslhz.github.io/atom.xml" rel="self"/>
   
   <link href="http://xjslhz.github.io/"/>
-  <updated>2020-08-16T13:07:08.449Z</updated>
+  <updated>2020-09-04T11:53:30.239Z</updated>
   <id>http://xjslhz.github.io/</id>
   
   <author>
@@ -17,18 +17,82 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>ES6</title>
+    <link href="http://xjslhz.github.io/2020/09043.html"/>
+    <id>http://xjslhz.github.io/2020/09043.html</id>
+    <published>2020-09-04T03:47:00.409Z</published>
+    <updated>2020-09-04T11:53:30.239Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;JavaScript的组成：&quot;&gt;&lt;a href=&quot;#JavaScript的组成：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>高阶综合面试题</title>
+    <link href="http://xjslhz.github.io/2020/09032.html"/>
+    <id>http://xjslhz.github.io/2020/09032.html</id>
+    <published>2020-09-03T11:48:48.794Z</published>
+    <updated>2020-09-03T12:32:04.949Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-Promise是什么？&quot;&gt;&lt;a href=&quot;#1-Promise是什么？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>综合面试题（1）</title>
+    <link href="http://xjslhz.github.io/2020/09031.html"/>
+    <id>http://xjslhz.github.io/2020/09031.html</id>
+    <published>2020-09-03T11:27:14.878Z</published>
+    <updated>2020-09-03T11:44:32.753Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、http和https的区别：&quot;&gt;&lt;a href=&quot;#一、http和https的区别：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基础篇</title>
     <link href="http://xjslhz.github.io/2020/080816107.html"/>
     <id>http://xjslhz.github.io/2020/080816107.html</id>
     <published>2020-08-08T06:21:48.020Z</published>
-    <updated>2020-08-16T13:07:08.449Z</updated>
+    <updated>2020-09-03T11:18:28.724Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;p&gt;基础篇&lt;/p&gt;
+&lt;h4 id=&quot;1-Js有哪些数据类型&quot;&gt;&lt;a href=&quot;#1-Js有哪些数据类型&quot; class=&quot;headerlink&quot; title=&quot;1.Js有哪些数据类型&quot;&gt;&lt;/a&gt;1.Js有哪些数据类型&lt;/h4&gt;&lt;p&gt;Number</summary>
         
       
     
